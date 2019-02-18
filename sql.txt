@@ -1,0 +1,17 @@
+CREATE TABLE `test`.`new_posts` ( `post_id` INT NOT NULL , `post_name` TEXT NOT NULL , `post_heading` TEXT NOT NULL , `post_user_type` TEXT NOT NULL , `post_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `post_url` LONGTEXT NULL DEFAULT NULL , `post_content` LONGTEXT NULL DEFAULT NULL ) ENGINE = InnoDB;
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`) VALUES (1,'COIL Member Prgs','Accelerator/Incubator & Other Prgs','student');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`) VALUES (2,'COLLAB Mbr Prgs','Accelerator/Incubator & Other Prgs','student');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`, `post_url`) VALUES (3,'EDI Programs','Accelerator/Incubator & Other Prgs', 'student', 'https://diversity.ucsd.edu/initiatives/progress-update-2018/edi-programs.html#%22,%22EDI%20Programs');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`) VALUES (4,'Legal Advising','Accelerator/Incubator & Other Prgs','student');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`, `post_url`) VALUES (5,'Rady (StartR)','Accelerator/Incubator & Other Prgs', 'student', 'https://rady.ucsd.edu/centers/ciid/startr/');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`, `post_url`) VALUES (6,'Basement' , 'Accelerator/Incubator & Other Prgs', 'student', 'http://www.ucsdbasement.com/');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`, `post_url`) VALUES (7, 'BlueLinc', 'Accelerator/Incubator & Other Prgs', 'student', 'http://bluelinc.ucsd.edu/');
+
+INSERT INTO `new_posts`(`post_id`, `post_name`, `post_heading`, `post_user_type`, `post_url`) VALUES (8, 'Blue Tech Incubator', 'Accelerator/Incubator & Other Prgs', 'student', 'https://www.dentons.com/en/whats-different-about-dentons/connecting-you-to-talented-lawyers-around-the-globe/news/2017/november/dentons-continues-commitment-to-bluetech-companies-by-launching-bluetech');
