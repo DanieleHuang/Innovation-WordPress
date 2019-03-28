@@ -1,4 +1,6 @@
-
+body{
+	font-family: 'Open Sans', sans-serif;
+}
 .message {
 	padding: 2rem;
 	background-color: #162A47;
@@ -103,7 +105,7 @@ li.ident-topic input[type=checkbox] {
 }
 
 h4.ident-user{
-	color: #2f6da2;
+	color: #182B49;
 	font-weight: normal;
 }
 
@@ -245,7 +247,8 @@ li.navbar a:visited {
 
 .overlay{
 	position:absolute;
-  background-color: rgba(0, 106, 150, 0.9);
+  /*background-color: rgba(0, 106, 150, 0.9);*/
+	background-color: rgba(24, 43, 73, 0.9);
   transition: .5s ease;
   text-align: center;
   padding: 1vh;
