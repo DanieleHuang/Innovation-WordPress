@@ -1,0 +1,39 @@
+body {
+  background-image: url(./img/ucsdlibrary.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:5rem;
+}
+
+.title {
+  background-color: #006A96;
+  height: 7rem;
+  width: 30vw;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  position:relative;
+  margin-bottom:-3rem;
+  box-shadow: 0px 4px 8px #BBBBBB;
+} .title h2 {
+  margin:auto;
+  color:white;
+}
+
+.backbtn{
+  position:absolute;
+  margin-left:10vw;
+  margin-top:1rem;
+  border:none;
+  background-color:#DCDCDC;
+  border-radius: 5px;
+  padding:0.5rem;
+  color: black !important;
+  text-decoration:none !important;
+}
+.content {
+  background-color: white;
+  margin:auto;
+  width: 80vw;
+  padding: 5rem;
+}
