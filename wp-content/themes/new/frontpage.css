@@ -1,0 +1,271 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.message {
+	padding: 2rem;
+	background-color: #162A47;
+	background-image: url(./img/lines.svg);
+	background-repeat: no-repeat;
+  background-size: cover;
+	color: white;
+	text-align:center;
+} .message h4 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 22px;
+} .message input[type=text] {
+	font-family: sans-serif;
+	font-size: 15px;
+	height: 45px;
+	width: 22rem;
+} .message input[type=email] {
+	font-family: sans-serif;
+	font-size: 15px;
+	height: 45px;
+	width: 22rem;
+	margin-left:1rem;
+} .message textarea {
+	font-family: sans-serif;
+	font-size: 15px;
+	height: 180px;
+	width:45rem;
+	margin-top:1rem;
+} .message input[type=submit] {
+	background-color: #edcf41;
+	display:block;
+	margin:auto;
+	margin-top: 1rem;
+	color: black;
+	border-radius: 5px;
+}
+
+.gifts {
+	text-align:center;
+} .gifts h3 {
+	color: #2f6da2;
+	text-align: center;
+} button.gifts {
+	background-color: #edcf41;
+	margin:auto;
+	color: black;
+	border-radius: 5px;
+	font-weight: normal;
+}
+
+.tabs {
+	overflow: hidden;
+	background-color: white;
+}
+
+.tabs button {
+	background-color: #efefef;
+	color: #2f6da2;
+	padding: 14px;
+	margin: 0;
+	margin-left: 3rem;
+	float: left;
+	border:none;
+	border-radius: 0;
+}
+
+.tabcontent {
+	background-color: #efefef;
+	background-image: url(./img/ucsdlibrary.png);
+}
+
+.tabcontent h5 {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.tabcontent p {
+	padding-bottom: 20px;
+	padding-left: 20px;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-style: italic;
+}
+
+ul.ident-topic {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+ul.ident-topic li {
+  width: 22vw;
+}
+
+li.ident-topic {
+	display: inline-block;
+}
+
+li.ident-topic input[type=checkbox] {
+	margin: 10px;
+}
+
+h4.ident-user{
+	color: #182B49;
+	font-weight: normal;
+}
+
+ul.ident-user {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	overflow: hidden;
+}
+
+li.ident-user {
+	display: inline;
+}
+
+li.ident-user input[type=image] {
+	width: 20vw;
+	height:15rem;
+}
+
+.ident-user p {
+	width:20vw;
+}
+
+.header {
+	color: white;
+	height: 50vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+} .header::after {
+    content: "";
+    background-image: url(./img/envision_header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(110%);
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-background {
+	background-color: rgba(0, 106, 150, 0.8);
+	width: 50vw;
+	margin:auto;
+	padding: 2rem;
+}
+
+.header-line{
+	width:30vw;
+	height:1px;
+	background-color: #FFCD00;
+}
+.header-text {
+	text-align: center;
+	color: white;
+} h1.header-text {
+		text-shadow: 6px 4px 10px #17354f;
+		font-size: 35px;
+} p.header-text {
+		font-family: sans-serif;
+		font-size: 20px;
+}
+
+.identify{
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
+	border-style: solid;
+	border-color: #00649C;
+	border-width: 1px;
+	width: 75vw;
+	margin:auto;
+	padding: 2rem;
+}
+
+.user-cards{
+	text-align:center;
+}
+
+.cards {
+	display:inline-block;
+	background-color: #E6EDF1;
+	padding:0.5rem;
+	margin:0.5rem;
+	border: 2px solid transparent;
+	/*box-shadow: 0px 4px 8px #CCCCCC;*/
+} .cards:hover {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFCD00;
+	transition: all .5s;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+	overflow: hidden;
+	background-color: #f2f2f2;
+}
+
+li.navbar {
+	float: right;
+}
+
+li.navbar a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 10px 14px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+li.navbar a:hover {
+	background-color: #d9d9d9;
+	color: black;
+}
+
+li.navbar a:visited {
+	color:black;
+}
+
+.resource{
+	display: inline-block;
+	text-decoration:none;
+	width: 45vw;
+	margin:1rem;
+	position:relative;
+}
+.resource-img{
+	width: 100%;
+	object-fit:cover;
+}
+
+.overlay{
+	position:absolute;
+  /*background-color: rgba(0, 106, 150, 0.9);*/
+	background-color: rgba(24, 43, 73, 0.9);
+  transition: .5s ease;
+  text-align: center;
+  padding: 1vh;
+	width:100%;
+	bottom : 0;
+	left : 0;
+	height: 6rem;
+} .overlay h2 {
+	text-shadow: 4px 2px 10px #17354f;
+	color: white;
+	font-style: italic;
+} .overlay p {
+	color: #FFCD00;
+	font-weight: 100;
+}
+
+#AllTopics{
+	padding:2rem;
+	text-align:center;
+}
