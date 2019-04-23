@@ -5,33 +5,38 @@
 </div>
 <div class="identify">
 <h4 class="ident-user">Who are you?</h4>
-<h3 class="ident-user" id="user-type-display"></h3>
 <form>
 <ul class="ident-user">
- 	<li class="ident-user">
-<img id="ip-student-type" onclick="ipUpdateUserType(&quot;Student&quot;, &quot;ip-student-type&quot;)" src="http://localhost/tse-wordpress/wp-content/uploads/2019/03/student.png"></li>
- 	<li class="ident-user"><img id="ip-faculty-type" onclick="ipUpdateUserType(&quot;Faculty&quot;, &quot;ip-faculty-type&quot;)" src="http://localhost/tse-wordpress/wp-content/uploads/2019/03/faculty.png"></li>
- 	<li class="ident-user"><img id="ip-alumni-type" onclick="ipUpdateUserType(&quot;Alumni &amp; Friends&quot;, &quot;ip-alumni-type&quot;)" src="http://localhost/tse-wordpress/wp-content/uploads/2019/03/alumfriends.png"></li>
+ 	<li class="ident-user"><input type="image" name="alumniFriends" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pencils_hb.jpg/330px-Pencils_hb.jpg"></li>
+ 	<li class="ident-user"><input type="image" name="Faculty" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pencils_hb.jpg/330px-Pencils_hb.jpg"></li>
+ 	<li class="ident-user"><input type="image" name="Students" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pencils_hb.jpg/330px-Pencils_hb.jpg"></li>
 </ul>
-<h4 class="ident-user ident-topic ip-hidden">What are you looking for?</h4>
-<ul class="ident-topic ip-hidden">
- 	<li class="ident-topic ip-cat ip-st-cat ip-fc-cat ip-hidden"><input id="ip-prof-dev-box" class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;prof-dev&quot;)">Professional Development</li>
- 	<li class="ident-topic ip-cat ip-al-cat ip-hidden"><input id="ip-cat-a-box" class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;cat-a&quot;)">Category A</li>
- 	<li class="ident-topic ip-cat ip-al-cat ip-fc-cat ip-hidden"><input id="ip-cat-b-box" class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;cat-b&quot;)">Category B</li>
+<h4 class="ident-user">What are you looking for?</h4>
+<ul class="ident-topic">
+ 	<li class="ident-topic"><input type="checkbox"> Professional Development</li>
+ 	<li class="ident-topic"><input type="checkbox"> Funding or Competitions</li>
+ 	<li class="ident-topic"><input type="checkbox"> Commercialization</li>
+ 	<li class="ident-topic"><input type="checkbox"> Networking &amp; Events</li>
+ 	<li class="ident-topic"><input type="checkbox"> Mentor and Volunteer</li>
+ 	<li class="ident-topic"><input type="checkbox"> Recruiting</li>
 </ul>
 </form></div>
-<div id="ip-resource-div" class="ip-resources ip-all-shown">
-<div id="ip-prof-dev-div" class="ip-resource-cat">
-[display-posts category="Professional Development" image_size="medium"]</div>
-<div id="ip-cat-a-div" class="ip-resource-cat">
-[display-posts category="Category A" image_size="medium"]</div>
-<div id="ip-cat-b-div" class="ip-resource-cat">
-[display-posts category="Category B" image_size="medium"]</div>
+<div class="topics">
+<div class="tabs">
+<button type="button" class="tablinks">All Topics</button><button type="button" class="tablinks">Topic 1</button><button type="button" class="tablinks">Topic 2</button><button type="button" class="tablinks">Topic 3</button><button type="button" class="tablinks">Topic 4</button></div>
+<div id="AllTopics" class="tabcontent">
+<h5>All Topics</h5>
+Various topics...
+
+</div>
 </div>
 <div class="gifts">
 <h3>Gifts</h3>
 <button type="button" class="gifts">Give to UC San Diego!
 </button>
+
+</div>
+<div class="message">
 <h4>Do you know of a good UCSD group or category that should be featured here?</h4>
 <form>
 <input type="text" name="name" placeholder="NAME"><input type="email" name="email" placeholder="EMAIL">
