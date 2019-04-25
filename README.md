@@ -8,7 +8,7 @@
 
 ## Activating Alexandra's JS functionality
 ### Activating the Theme
-1) Go to 'Appearance/Themes' -> Add New Theme -> Upload Theme -> Choose the .zip file from the repo
+1) Go to 'Appearance/Themes' -> Activate tsetest theme
 2) Install Display Post Plugin -> activate it
 3) Go to Pages/Add new -> copy and paste the content from "frontpage.html" from the repo's main level <br>
 3.1) Change the src of the personas: <br>
