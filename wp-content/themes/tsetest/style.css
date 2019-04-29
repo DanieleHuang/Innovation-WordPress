@@ -931,16 +931,20 @@ form p {
 	background-color: white;
 }
 
-.tabs button {
-	background-color: white;
+.tabs a {
+	background-color: #efefef;
+  text-decoration: none;
 	color: #2f6da2;
 	padding: 14px;
 	margin: 0;
 	float: left;
 	border-radius: 0;
+  margin-left: 3rem;
+  float: left;
+  border:none;
 }
 
-.tabs button:hover {
+.tabs a:hover {
 	background-color: #2f6da2;
 	color: white;
 }
@@ -965,16 +969,15 @@ form p {
 
 
 
-
 ul.ip-cat-boxes {
   list-style-type: none;
+  color:white;
   margin: auto;
   padding: 0;
-  padding-left: 3vw;
 }
 
 ul.ip-cat-boxes li {
-  width: 22vw;
+  width: 26.77vw;
 }
 
 li.ip-cat {
@@ -986,12 +989,11 @@ li.ip-cat input[type=checkbox] {
 }
 
 h4.ident-user{
-	color: #182B49;
+	color: white;
 	font-weight: normal;
 }
 
 div.ident-user {
-
   display: flex;
   justify-content: center;
   margin: 0;
@@ -1015,6 +1017,7 @@ div.ident-user {
   padding-top: 1rem;
   border: 2px solid transparent;
   text-align: center;
+  margin: 0rem 1.5rem;
 } .cards:hover {
 	border-style: solid;
 	border-width: 2px;
@@ -1032,14 +1035,13 @@ div.ident-user {
 	margin-left: calc(57% - 50vw);
 	width: 100vw;
 } .ip-header::after {
-	
     content: "";
     background-image: url(./img/envision_header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(110%);
     background-position: center;
-	top: 50px;
+	  top: 50px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -1097,7 +1099,8 @@ li.ip-navbar a {
 	padding: 10px 14px;
 	text-decoration: none;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 20px;    color: white;
+    font-weight: normal;
 }
 
 li.ip-navbar a:hover {
@@ -1316,24 +1319,9 @@ div.entry-content p {
   margin: auto;
   margin-left: calc(20% - 25vw);
   width: 101vw;
-  padding: 2vw 22vw;
+  padding: 2vw 10vw;
 }
 
-.tabs {
-	overflow: hidden;
-	background-color: white;
-}
-
-.tabs button {
-	background-color: #efefef;
-	color: #2f6da2;
-	padding: 14px;
-	margin: 0;
-	margin-left: 3rem;
-	float: left;
-	border:none;
-	border-radius: 0;
-}
 
 .tabcontent {
 	background-color: #efefef;
@@ -1347,6 +1335,6 @@ div.entry-content p {
 
 .ident-labels {
     bottom: 0;
-    width: 90%;
+    width: 75%;
     position: absolute;
 }
