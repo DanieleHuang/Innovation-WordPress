@@ -12,46 +12,84 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <div class="ip-header">
-    <div class="ip-header-background">
-      <h1 class="ip-header-text">Get Involved On Campus</h1>
-      <hr class="ip-header-line">
-      <p class="ip-header-text">Explore UCSD's innovation and entrepreneurship programs</p>
-    </div>
-  </div>
   <div class="ip-identify">
   <h4 class="ident-user">Who are you?</h4>
   <h3 class="ident-user" id="user-type-display"></h3>
   <form>
   <div class="ident-user">
     <div class="cards">
-      <img id="ip-student-type" onclick="ipUpdateUserType(&quot;Student&quot;, &quot;ip-student-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/student.svg">
-      <p>Student</p>
+      <img id="ip-student-type" onclick="ipUpdateUserType(&quot;Students&quot;, &quot;ip-student-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/student.svg">
+      <p>Students</p>
     </div>
     <div class="cards">
-      <img id="ip-faculty-type" onclick="ipUpdateUserType(&quot;Faculty&quot;, &quot;ip-faculty-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/faculty.svg">
-      <p>Faculty</p>
+      <img id="ip-faculty-type" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;ip-faculty-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/faculty.svg">
+      <p>Faculty & Staff</p>
       </div>
     <div class="cards">
-        <img id="ip-alumni-type" onclick="ipUpdateUserType(&quot;Alumni &amp; Friends&quot;, &quot;ip-alumni-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/alumni.svg">
-        <p>Alumni & Friends</p>
+        <img id="ip-alumni-type" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;ip-alumni-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/alumni.svg">
+        <p>Alumni & Community</p>
     </div>
   </div>
   <h4 class="ident-user ident-topic ip-hidden">What are you looking for?</h4>
-  <ul class="ident-topic ip-hidden">
-   	<li class="ident-topic ip-cat ip-st-cat ip-fc-cat ip-hidden"><input id="ip-prof-dev-box" class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;prof-dev&quot;)">Professional Development</li>
-   	<li class="ident-topic ip-cat ip-al-cat ip-hidden"><input id="ip-cat-a-box" class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;cat-a&quot;)">Category A</li>
-   	<li class="ident-topic ip-cat ip-al-cat ip-fc-cat ip-hidden"><input id="ip-cat-b-box" class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;cat-b&quot;)">Category B</li>
+  <ul class="ip-cat-boxes ip-hidden" id="student_boxes">
+    <li class="ip-cat"><input id="ip-accelerator"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;accelerator&quot;)">Accelerator & Other Prgs</li>
+    <li class="ip-cat"><input id="ip-education"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;education&quot;)">Education & Hands-on Learning</li>
+    <li class="ip-cat"><input id="ip-fund-comp"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;fund-comp&quot;)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-maker-collab"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;maker-collab&quot;)">Maker & Collaborative Spaces</li>
+    <li class="ip-cat"><input id="ip-mentor-advisor"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;mentor-advisor&quot;)">Mentors & Advisors</li>
+    <li class="ip-cat"><input id="ip-networking"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-project"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;project&quot;)">Projects & Career</li>
   </ul>
-  </form></div>
-  <div id="ip-resource-div" class="ip-resources ip-all-shown">
-  <div id="ip-prof-dev-div" class="ip-resource-cat">
-  [display-posts category="Professional Development" image_size="medium"]</div>
-  <div id="ip-cat-a-div" class="ip-resource-cat">
-  [display-posts category="Category A" image_size="medium"]</div>
-  <div id="ip-cat-b-div" class="ip-resource-cat">
-  [display-posts category="Category B" image_size="medium"]</div>
+  <ul class="ip-cat-boxes ip-hidden" id="faculty_boxes">
+    <li class="ip-cat"><input id="ip-accelerator"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;accelerator&quot;)">Accelerator & Other Prgs</li>
+    <li class="ip-cat"><input id="ip-prof-dev"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;prof-dev&quot;)">Professional Development</li>
+    <li class="ip-cat"><input id="ip-fund-comp"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;fund-comp&quot;)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-networking"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-technology"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;technology&quot;)">Technology Commercialization</li>
+  </ul>
+  <ul class="ip-cat-boxes ip-hidden" id="alumni_boxes">
+    <li class="ip-cat"><input id="ip-investor"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;investor&quot;)">Investor Opportunities</li>
+    <li class="ip-cat"><input id="ip-mentor-volunteer"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;mentor-volunteer&quot;)">Mentor and Volunteer</li>
+    <li class="ip-cat"><input id="ip-networking"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-recruit"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;recruit&quot;)">Recruit for Your Company</li>
+    <li class="ip-cat"><input id="ip-business"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;business&quot;)">Start a Business</li>
+    <li class="ip-cat"><input id="ip-competition"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;competition&quot;)">Showcases & Competitions</li>
+
+  </ul>
+</form></div>
+
+<div class="topics">
+  <div class="tabs">
+    <button type="button" disabled>All Topics</button>
   </div>
+<div id="AllTopics" class="tabcontent">
+  <div id="ip-allresources-div" class="ip-resource-tiles ">
+    [display-posts category="Students,Faculty & Staff,Alumni & Community" image_size="large"]
+  </div>
+  <div id="ip-students-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Students" image_size="large"]
+  </div>
+  <div id="ip-faculty-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Faculty & Staff" image_size="large"]
+  </div>
+  <div id="ip-alumni-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Alumni & Community" image_size="large"]
+  </div>
+
+  <div id="ip-students-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Professional Development" image_size="large"]
+  </div>
+  <div id="ip-prof-dev-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Professional Development" image_size="large"]
+  </div>
+  <div id="ip-cat-a-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Category A" image_size="large"]
+  </div>
+  <div id="ip-cat-b-div" class="ip-resource-tiles ip-hidden">
+  [display-posts category="Category B" image_size="large"]
+  </div>
+
+</div>
   <div class="ip-gifts ip-identify">
     <h3>Support UC San Diego's Innovation Initiative!</h3>
     <p>By supporting the Office of Innovation, you are a part of the Campaign for UC San Diego. Help us make waves — here and across the globe.</p>

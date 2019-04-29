@@ -228,6 +228,9 @@ function twentynineteen_scripts() {
 
 	wp_enqueue_style( 'twentynineteen-print-style', get_template_directory_uri() . '/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
+	//code added to run jquery
+	wp_enqueue_script( 'twentynineteen-print-style', get_template_directory_uri() .'/js/categoryQuery.js', array('jquery'), '1.0', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -321,3 +324,25 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+
+$Param = array(
+
+  'doShortCode'=>admin_url( 'admin-ajax.php?action=handle_ajax_shortcode' ),
+
+);
+wp_localize_script('handle_ajax_shortcode','Param', $Param);
+
+//executes for users that are not logged in.
+add_action( 'wp_ajax_nopriv_handle_ajax_shortcode', 'handle_ajax_shortcode' );
+//executes for users that are logged in.
+add_action( 'wp_ajax_handle_ajax_shortcode', 'handle_ajax_shortcode' );
+
+
+function handle_ajax_shortcode(){
+  //put whatever you want to be execute when JavaScript event is triggered
+  do_shortcode( '[display-posts image_size="large"]' );
+  // Don't forget to stop execution afterward.
+  wp_die();
+
+}

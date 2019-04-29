@@ -922,62 +922,7 @@ form p {
     max-width: none;
 }
 
-.message {
-	text-align: center;
-}
 
-.message h4 {
-	font-weight: normal;
-	font-size: 22px;
-	margin-top: 20px;
-}
-
-.message input[type=text] {
-	float: left;
-	font-family: sans-serif;
-	font-size: 15px;
-	height: 45px;
-	width: 47.5%;
-}
-
-.message input[type=email] {
-	float: left;
-	font-family: sans-serif;
-	font-size: 15px;
-	height: 45px;
-	width: 47.5%;
-	margin-left: 5%;
-	margin-bottom: 15px;
-}
-
-.message textarea {
-	font-family: sans-serif;
-	font-size: 15px;
-	height: 180px;
-}
-
-.message input[type=submit] {
-	background-color: #edcf41;
-	color: black;
-	border-radius: 0;
-}
-
-.gifts h3 {
-	color: #2f6da2;
-	padding: 20px;
-}
-
-.gifts {
-	text-align: center;
-	margin: 0 0 0 0;
-}
-
-button.gifts {
-	background-color: #edcf41;
-	color: black;
-	border-radius: 0;
-	font-weight: normal;
-}
 
 .tabs {
 	margin-top: 20px;
@@ -1020,21 +965,22 @@ button.gifts {
 
 
 
-ul.ident-topic {
+ul.ip-cat-boxes {
   list-style-type: none;
   margin: auto;
   padding: 0;
+  padding-left: 3vw;
 }
 
-ul.ident-topic li {
+ul.ip-cat-boxes li {
   width: 22vw;
 }
 
-li.ident-topic {
+li.ip-cat {
 	display: inline-block;
 }
 
-li.ident-topic input[type=checkbox] {
+li.ip-cat input[type=checkbox] {
 	margin: 10px;
 }
 
@@ -1257,37 +1203,47 @@ div.entry-content p {
 	display: none !important;
 }
 
-.ip-resources div {
+.ip-resource-tiles div {
 	display: inline-block;
 }
 
-.ip-resources ul.display-posts-listing {
+.ip-resource-tiles ul.display-posts-listing {
   list-style-type: none;
-  display: flex;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  max-width: 75vw;
+  columns: 2;
 }
 
-.ip-resources li.listing-item {
-	display: flex;
-	flex-direction: column;
-	padding-right: 40px;
-	padding-bottom: 40px;
-}
-
-.ip-resources a.title {
+.ip-resource-tiles li.listing-item {
 	display: inline-block;
-	bottom: 40px;
-	left: 30px;
+	flex-direction: column;
+	padding: 40px 40px;
+}
+
+.ip-resource-tiles li:hover {
+	font-weight: bold;
+}
+.ip-resource-tiles a.image {
+	display: block;
+}
+.ip-resource-tiles a.title {
+	display: inline-block;
 	text-align: center;
 	z-index: 50;
-	background-color: #F7D154;
-	color: black;
+	background-color: rgba(24, 43, 73, 0.9);
+	transition: .5s ease;
+	padding: 1vh;
+	width:100%;
+	bottom : 0;
+	left : 0;
+	height: 3.5rem;
+	text-shadow: 4px 2px 10px #17354f;
+	color: white;
+	font-style: italic;
 }
-.ip-resources a.title:hover{
-	font-weight: bold;
-	text-decoration: none;
-}
+
 /*gifts and message section*/
 .ip-message {
 	padding: 2rem;
@@ -1297,8 +1253,8 @@ div.entry-content p {
   	background-size: cover;
 	color: white;
 	text-align:center;
-	margin-left: calc(57% - 50vw);
-	width: 100vw;
+	margin-left: calc(10% - 20vw);
+	width: 102vw;
 } .ip-message h4 {
 	text-align: center;
 	font-weight: normal;
@@ -1354,5 +1310,28 @@ div.entry-content p {
 	padding: 2rem;
 }
 
-#ip-cat-a-div {
+.tabs {
+	overflow: hidden;
+	background-color: white;
+}
+
+.tabs button {
+	background-color: #efefef;
+	color: #2f6da2;
+	padding: 14px;
+	margin: 0;
+	margin-left: 3rem;
+	float: left;
+	border:none;
+	border-radius: 0;
+}
+
+.tabcontent {
+	background-color: #efefef;
+	background-image: url(./img/ucsdlibrary.png);
+	width: 75vw;
+}
+
+.ip-resource-tiles ul {
+	
 }
