@@ -1,5 +1,6 @@
 console.log("Success!");
-
+let toggled_box = 0;
+let selected_user = null;
 function ipResetUserType() {
 	document.getElementById("user-type-display").innerHTML = "";
 	document.getElementById("ip-student-type").classList.remove("selected");
@@ -25,6 +26,12 @@ function ipResetUserType() {
 		boxes[i].checked = false;
 	}
 
+	//hide all tiles
+	let tiles = document.getElementsByClassName("ip-resource-tiles");
+	for (i=0; i< tiles.length;i++){
+		tiles[i].classList.add("ip-hidden");
+	}
+
 }
 
 function ipUpdateUserType(type, currentId) {
@@ -38,37 +45,40 @@ function ipUpdateUserType(type, currentId) {
 	document.getElementById("user-type-display").innerHTML = type;
 	document.getElementById(currentId).classList.add("selected");
 
-	let typeClass;
+	let typeDiv;
 	let typeBox;
+	let all_tiles = "ip-allresources-div";
 	if (type == "Students") {
-		typeClass = "ip-st-cat";
+		typeDiv = "ip-students-div";
 		typeBox= "student_boxes";
 	} else if (type == "Faculty & Staff") {
-		typeClass = "ip-fc-cat";
+		typeDiv = "ip-faculty-div";
 		typeBox = "faculty_boxes";
 	} else {
-		typeClass = "ip-al-cat";
+		typeDiv = "ip-alumni-div";
 		typeBox = "alumni_boxes";
 	}
-	console.log(typeBox);
-	document.getElementById(typeBox).classList.remove("ip-hidden");
-	let catStuff = document.getElementsByClassName(typeClass);
-	let i;
-	for (i = 0; i < catStuff.length; i++) {
-		catStuff[i].classList.remove("ip-hidden");
-	}
 
-	ipShowAllCategories();
+	selected_user = typeDiv;
+
+	//hide all tiles
+  document.getElementById(all_tiles).classList.add("ip-hidden");
+	//show only boxes related to selected persona
+	document.getElementById(typeBox).classList.remove("ip-hidden");
+	//show all tiles related to selected persona
+	document.getElementById(typeDiv).classList.remove("ip-hidden");
+
+	//ipShowAllCategories();
 }
 
-function ipShowAllCategories() {
+/*function ipShowAllCategories() {
 	let cats = document.getElementsByClassName("ip-resource-cat");
 	let i;
 	for (i = 0; i < cats.length; i++) {
 		cats[i].classList.remove("ip-hidden");
 	}
 	document.getElementById("ip-resource-div").classList.add("ip-all-shown");
-}
+}*/
 
 function ipHideAllCategories() {
 	let cats = document.getElementsByClassName("ip-resource-cat");
@@ -92,7 +102,7 @@ function ipAllCatsShown() {
 }
 
 function ipAllCatsHidden() {
-	let cats = document.getElementsByClassName("ip-resource-cat");
+	let cats = document.getElementsByClassName("ip-resource-tiles");
 	let i;
 	for (i = 0; i < cats.length; i++) {
 		if (cats[i].classList.contains("ip-hidden") == false) {
@@ -103,17 +113,24 @@ function ipAllCatsHidden() {
 }
 
 function ipToggleCategory(category) {
-	if (document.getElementById("ip-resource-div").classList.contains("ip-all-shown")) {
+	/*if (document.getElementById("ip-resource-div").classList.contains("ip-all-shown")) {
 		ipHideAllCategories();
-	}
-
+	}*/
+ console.log(category);
+	//fix hardcode TODO
 	if (document.getElementById("ip-" + category + "-box").checked == true) {
-		document.getElementById("ip-" + category + "-div").classList.remove("ip-hidden");
+		document.getElementById("ip-stud-" + category  ).classList.remove("ip-hidden");
+		toggled_box += 1;
 	} else {
-		document.getElementById("ip-" + category + "-div").classList.add("ip-hidden");
+		document.getElementById("ip-stud-" + category ).classList.add("ip-hidden");
+		toggled_box -=1;
 	}
-
-	if (ipAllCatsHidden() == true) {
+	if(toggled_box > 0){
+			document.getElementById(selected_user).classList.add("ip-hidden");
+	}else{
+		document.getElementById(selected_user).classList.remove("ip-hidden");
+	}
+	/*if (ipAllCatsHidden() == true) {
 		ipShowAllCategories();
-	}
+	}*/
 }
