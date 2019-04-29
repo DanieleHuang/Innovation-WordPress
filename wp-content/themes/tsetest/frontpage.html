@@ -5,8 +5,6 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./style.css">
-
     <!-- My CSS & JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -14,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <div class="ip-userselect">
-  <h4 class="ident-user" style="color: white !important;">Who are you?</h4>
-  <h3 class="ident-user" id="user-type-display" style="color: white !important;"></h3>
+  <div class="ip-identify">
+  <h4 class="ident-user">Who are you?</h4>
+  <h3 class="ident-user" id="user-type-display"></h3>
   <form>
+
   <div class="row">
     <div class="col">
       <div class="cards">
@@ -27,26 +26,20 @@
         </a>
       </div>
     </div>
-    <div class="col">
-      <div class="cards">
-        <a href="#prompt2" style="text-decoration: none; color:black;">
-          <img id="ip-faculty-type" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;ip-faculty-type&quot;)" src="./img/faculty.svg">
-          <p class="ident-labels">Faculty & Staff</p>
-        </a>
+    <div class="cards">
+      <img id="ip-faculty-type" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;ip-faculty-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/faculty.svg">
+      <p>Faculty & Staff</p>
       </div>
-    </div>
-    <div class="col">
-      <div class="cards">
-        <a href="#prompt2" style="text-decoration: none; color:black;">
-          <img id="ip-alumni-type" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;ip-alumni-type&quot;)" src="./img/alumni.svg">
-          <p class="ident-labels">Alumni & Community</p>
-        </a>
-      </div> 
+    <div class="cards">
+        <img id="ip-alumni-type" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;ip-alumni-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/alumni.svg">
+        <p>Alumni & Community</p>
     </div>
   </div>
 
+
   <div id="prompt2" style="padding-bottom:3rem;"></div>
   <h4 class="ident-user ident-topic ip-hidden" id="prompt2">What are you looking for?</h4>
+
   <ul class="ip-cat-boxes ip-hidden" id="student_boxes">
     <li class="ip-cat"><input id="ip-accelerator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;accelerator&quot;)">Accelerator/Incubator</li>
     <li class="ip-cat"><input id="ip-education-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;education&quot;)">Education & Hands-on Learning</li>
@@ -64,16 +57,18 @@
     <li class="ip-cat"><input id="ip-technology-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;technology&quot;)">Technology Commercialization</li>
   </ul>
   <ul class="ip-cat-boxes ip-hidden" id="alumni_boxes">
+
     <li class="ip-cat"><input id="ip-investor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;investor&quot;)">Investor Opportunities</li>
     <li class="ip-cat"><input id="ip-mentor-volunteer-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;mentor-volunteer&quot;)">Mentor and Volunteer</li>
     <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
     <li class="ip-cat"><input id="ip-recruit-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;recruit&quot;)">Recruit for Your Company</li>
     <li class="ip-cat"><input id="ip-business-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;business&quot;)">Start a Business</li>
     <li class="ip-cat"><input id="ip-competition-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;competition&quot;)">Showcases & Competitions</li>
+
   </ul>
 </form></div>
 
-<div class="topics" id="topics">
+<div class="topics">
   <div class="tabs">
     <a href="#topics">All Topics</a>
   </div>
