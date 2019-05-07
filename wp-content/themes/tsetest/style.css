@@ -84,6 +84,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -987,7 +988,7 @@ li.ip-cat input[type=checkbox] {
 	margin: 10px;
 }
 
-h4.ident-user{
+.ident-user{
 	color: white;
 	font-weight: normal;
 }
@@ -1003,7 +1004,7 @@ div.ident-user {
 
 .cards img {
 	width: 20vw;
-	height:15rem;
+	height:12rem;
 }
 
 .ident-user p {
@@ -1197,7 +1198,9 @@ div.entry-content p {
 }
 
 .selected {
-	border: 5px solid yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFCD00;
 }
 
 .ip-hidden {
@@ -1311,7 +1314,6 @@ div.entry-content p {
 	padding: 2rem;
 }
 
-/*
 .ip-userselect {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
@@ -1320,7 +1322,8 @@ div.entry-content p {
   margin-left: calc(20% - 25vw);
   width: 101vw;
   padding: 2vw 10vw;
-*/
+}
+
 .tabs {
 	overflow: hidden;
 	background-color: white;

@@ -12,27 +12,35 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <div class="ip-identify">
+  <div class="ip-userselect">
   <h4 class="ident-user">Who are you?</h4>
   <h3 class="ident-user" id="user-type-display"></h3>
   <form>
 
   <div class="row">
     <div class="col">
-      <div class="cards">
-        <a href="#prompt2" style="text-decoration: none; color:black;">
-          <img id="ip-student-type" onclick="ipUpdateUserType(&quot;Students&quot;, &quot;ip-student-type&quot;)" src="http://localhost/wp-content/themes/tsetest/img/student.svg" style="width:11vw !important;" >
-          <p class="ident-labels">Students</p>
-        </a>
-      </div>
+      <a href="#prompt2" style="text-decoration: none; color:black;">
+        <div class="cards" id="student-card" onclick="ipUpdateUserType(&quot;Students&quot;, &quot;student-card&quot;)">
+          <img id="ip-student-type" src="http://localhost/wp-content/themes/tsetest/img/student.svg" style="width:11vw !important;" >
+          <p>Students</p>
+        </div>
+      </a> 
     </div>
-    <div class="cards">
-      <img id="ip-faculty-type" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;ip-faculty-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/faculty.svg">
-      <p>Faculty & Staff</p>
-      </div>
-    <div class="cards">
-        <img id="ip-alumni-type" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;ip-alumni-type&quot;)" src="http://localhost/Innovation-Wordpress/wp-content/uploads/img/alumni.svg">
-        <p>Alumni & Community</p>
+    <div class="col">
+      <a href="#prompt2" style="text-decoration: none; color:black;">
+        <div class="cards" id="faculty-card" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;faculty-card&quot;)">
+          <img id="ip-faculty-type" src="http://localhost/wp-content/themes/tsetest/img/faculty.svg">
+          <p>Faculty & Staff</p>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#prompt2" style="text-decoration: none; color:black;">
+        <div class="cards" id="alumni-card" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;alumni-card&quot;)">
+          <img id="ip-alumni-type" src="http://localhost/wp-content/themes/tsetest/img/alumni.svg">
+          <p>Alumni & Community</p>
+        </div>
+      </a>
     </div>
   </div>
 

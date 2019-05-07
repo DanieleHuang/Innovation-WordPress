@@ -3,9 +3,9 @@ let toggled_box = 0;
 let selected_user = null;
 function ipResetUserType() {
 	document.getElementById("user-type-display").innerHTML = "";
-	document.getElementById("ip-student-type").classList.remove("selected");
-	document.getElementById("ip-faculty-type").classList.remove("selected");
-	document.getElementById("ip-alumni-type").classList.remove("selected");
+	document.getElementById("student-card").classList.remove("selected");
+	document.getElementById("faculty-card").classList.remove("selected");
+	document.getElementById("alumni-card").classList.remove("selected");
 
 	let topics = document.getElementsByClassName("ip-cat-boxes");
 	let i;
@@ -62,7 +62,7 @@ function ipUpdateUserType(type, currentId) {
 	selected_user = typeDiv;
 
 	//hide all tiles
-  document.getElementById(all_tiles).classList.add("ip-hidden");
+  	document.getElementById(all_tiles).classList.add("ip-hidden");
 	//show only boxes related to selected persona
 	document.getElementById(typeBox).classList.remove("ip-hidden");
 	//show all tiles related to selected persona
