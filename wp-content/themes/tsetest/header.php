@@ -28,6 +28,7 @@
 <div id="page" class="site">
 
 	<img src="http://localhost/wp-content/themes/tsetest/img/navbar.png" style="width:101vw;">
+	<img src="http://localhost/wp-content/themes/tsetest/img/header.png" style="width:101vw;">
 	<!--
 	<div class="ip-navbar">
 		<ul class="ip-navbar">
