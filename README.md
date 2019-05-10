@@ -21,3 +21,10 @@
 5) Go to Settings/Reading -> Select static page -> choose for homepage the page number assigned to your new page ( in my case it was #36 ). Do the same thing for posts. Save changes.
 ### Add posts
 6) Go to Posts/Add New. Give title and description. Select a category that is present as checkbox in the front page ( the first time doing this, you will need to add a new category and select it thereafter )
+### Import posts 
+7) Go to Tools/Import  <br>
+    -In the Import list, install WordPress. <br>
+    -Click "Run Importer" under WordPress and choose to import "exported_posts.xml".  <br>
+    -Select your username <br>
+    -Check "Download and import file attachments" <br>
+    -Click "Submit"
