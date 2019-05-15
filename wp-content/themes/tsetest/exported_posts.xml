@@ -27,13 +27,13 @@
 
 <channel>
 	<title>Innovation Portal</title>
-	<link>http://localhost/Innovation-Wordpress</link>
+	<link>http://localhost/</link>
 	<description>Just another WordPress site</description>
 	<pubDate>Fri, 10 May 2019 21:21:21 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://localhost/Innovation-Wordpress</wp:base_site_url>
-	<wp:base_blog_url>http://localhost/Innovation-Wordpress</wp:base_blog_url>
+	<wp:base_site_url>http://localhost/</wp:base_site_url>
+	<wp:base_blog_url>http://localhost/</wp:base_blog_url>
 
 	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[danhuang]]></wp:author_login><wp:author_email><![CDATA[dah052@ucsd.edu]]></wp:author_email><wp:author_display_name><![CDATA[danhuang]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
@@ -42,10 +42,10 @@
 
 	<item>
 		<title>EDI Programs</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/edi-programs/</link>
+		<link>http://localhost/2019/04/29/edi-programs/</link>
 		<pubDate>Mon, 29 Apr 2019 07:22:14 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=269</guid>
+		<guid isPermaLink="false">http://localhost/?p=269</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -78,10 +78,10 @@
 	</item>
 	<item>
 		<title>Rady (StartR)</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/rady-startr/</link>
+		<link>http://localhost/2019/04/29/rady-startr/</link>
 		<pubDate>Mon, 29 Apr 2019 07:28:55 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=271</guid>
+		<guid isPermaLink="false">http://localhost/?p=271</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -114,10 +114,10 @@
 	</item>
 	<item>
 		<title>Basement</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/basement/</link>
+		<link>http://localhost/2019/04/29/basement/</link>
 		<pubDate>Mon, 29 Apr 2019 07:29:16 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=273</guid>
+		<guid isPermaLink="false">http://localhost/?p=273</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -150,10 +150,10 @@
 	</item>
 	<item>
 		<title>BlueLinc</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/bluelinc/</link>
+		<link>http://localhost/2019/04/29/bluelinc/</link>
 		<pubDate>Mon, 29 Apr 2019 07:29:37 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=275</guid>
+		<guid isPermaLink="false">http://localhost/?p=275</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -186,10 +186,10 @@
 	</item>
 	<item>
 		<title>Certificate Programs</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/certificate-programs/</link>
+		<link>http://localhost/2019/04/29/certificate-programs/</link>
 		<pubDate>Mon, 29 Apr 2019 07:30:36 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=277</guid>
+		<guid isPermaLink="false">http://localhost/?p=277</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -222,10 +222,10 @@
 	</item>
 	<item>
 		<title>Basement BizTech Shops</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/basement-biztech-shops/</link>
+		<link>http://localhost/2019/04/29/basement-biztech-shops/</link>
 		<pubDate>Mon, 29 Apr 2019 07:32:07 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=279</guid>
+		<guid isPermaLink="false">http://localhost/?p=279</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -258,10 +258,10 @@
 	</item>
 	<item>
 		<title>Funding</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/funding/</link>
+		<link>http://localhost/2019/04/29/funding/</link>
 		<pubDate>Mon, 29 Apr 2019 07:32:33 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=281</guid>
+		<guid isPermaLink="false">http://localhost/?p=281</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -294,10 +294,10 @@
 	</item>
 	<item>
 		<title>SD Hacks</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/sd-hacks/</link>
+		<link>http://localhost/2019/04/29/sd-hacks/</link>
 		<pubDate>Mon, 29 Apr 2019 07:34:02 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=285</guid>
+		<guid isPermaLink="false">http://localhost/?p=285</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -330,10 +330,10 @@
 	</item>
 	<item>
 		<title>TEN-Pitch Night</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/ten-pitch-night/</link>
+		<link>http://localhost/2019/04/29/ten-pitch-night/</link>
 		<pubDate>Mon, 29 Apr 2019 07:47:03 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=287</guid>
+		<guid isPermaLink="false">http://localhost/?p=287</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -366,10 +366,10 @@
 	</item>
 	<item>
 		<title>Triton Challenge</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/triton-challenge/</link>
+		<link>http://localhost/2019/04/29/triton-challenge/</link>
 		<pubDate>Mon, 29 Apr 2019 07:47:23 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=289</guid>
+		<guid isPermaLink="false">http://localhost/?p=289</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -402,10 +402,10 @@
 	</item>
 	<item>
 		<title>Envision</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/envision/</link>
+		<link>http://localhost/2019/04/29/envision/</link>
 		<pubDate>Mon, 29 Apr 2019 07:48:12 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=291</guid>
+		<guid isPermaLink="false">http://localhost/?p=291</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -438,10 +438,10 @@
 	</item>
 	<item>
 		<title>Prototyping Lab</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/prototyping-lab/</link>
+		<link>http://localhost/2019/04/29/prototyping-lab/</link>
 		<pubDate>Mon, 29 Apr 2019 07:48:38 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=293</guid>
+		<guid isPermaLink="false">http://localhost/?p=293</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -474,10 +474,10 @@
 	</item>
 	<item>
 		<title>ECE Makerspace</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/ece-makerspace/</link>
+		<link>http://localhost/2019/04/29/ece-makerspace/</link>
 		<pubDate>Mon, 29 Apr 2019 07:49:01 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=295</guid>
+		<guid isPermaLink="false">http://localhost/?p=295</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -510,10 +510,10 @@
 	</item>
 	<item>
 		<title>OIC</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/oic/</link>
+		<link>http://localhost/2019/04/29/oic/</link>
 		<pubDate>Mon, 29 Apr 2019 07:49:51 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=297</guid>
+		<guid isPermaLink="false">http://localhost/?p=297</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -547,10 +547,10 @@
 	</item>
 	<item>
 		<title>EIRs</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/eirs/</link>
+		<link>http://localhost/2019/04/29/eirs/</link>
 		<pubDate>Mon, 29 Apr 2019 07:50:48 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=299</guid>
+		<guid isPermaLink="false">http://localhost/?p=299</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -583,10 +583,10 @@
 	</item>
 	<item>
 		<title>Eve with Entrepreneur</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/eve-with-entrepreneur/</link>
+		<link>http://localhost/2019/04/29/eve-with-entrepreneur/</link>
 		<pubDate>Mon, 29 Apr 2019 07:51:42 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=301</guid>
+		<guid isPermaLink="false">http://localhost/?p=301</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -619,10 +619,10 @@
 	</item>
 	<item>
 		<title>Ignite</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/ignite/</link>
+		<link>http://localhost/2019/04/29/ignite/</link>
 		<pubDate>Mon, 29 Apr 2019 07:52:03 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=303</guid>
+		<guid isPermaLink="false">http://localhost/?p=303</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -655,10 +655,10 @@
 	</item>
 	<item>
 		<title>Changemaker Week</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/changemaker-week/</link>
+		<link>http://localhost/2019/04/29/changemaker-week/</link>
 		<pubDate>Mon, 29 Apr 2019 07:52:35 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=305</guid>
+		<guid isPermaLink="false">http://localhost/?p=305</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -691,10 +691,10 @@
 	</item>
 	<item>
 		<title>Career Center</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/career-center/</link>
+		<link>http://localhost/2019/04/29/career-center/</link>
 		<pubDate>Mon, 29 Apr 2019 07:53:14 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=307</guid>
+		<guid isPermaLink="false">http://localhost/?p=307</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -734,7 +734,7 @@
 		<link>http://real.ucsd.edu/</link>
 		<pubDate>Mon, 29 Apr 2019 07:53:45 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=309</guid>
+		<guid isPermaLink="false">http://localhost/?p=309</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -771,10 +771,10 @@
 	</item>
 	<item>
 		<title>Hello world!</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/22/hello-world__trashed/</link>
+		<link>http://localhost/2019/04/22/hello-world__trashed/</link>
 		<pubDate>Mon, 22 Apr 2019 22:40:40 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=1</guid>
+		<guid isPermaLink="false">http://localhost/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
@@ -828,10 +828,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title></title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/23/12__trashed/</link>
+		<link>http://localhost/2019/04/23/12__trashed/</link>
 		<pubDate>Tue, 23 Apr 2019 00:22:56 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=12</guid>
+		<guid isPermaLink="false">http://localhost/?p=12</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:html /-->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -863,10 +863,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title>Post : Category B</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/23/temp__trashed/</link>
+		<link>http://localhost/2019/04/23/temp__trashed/</link>
 		<pubDate>Tue, 23 Apr 2019 01:31:08 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=43</guid>
+		<guid isPermaLink="false">http://localhost/?p=43</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>Temp temp temp</p>
@@ -912,10 +912,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title>temp something</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/23/temp-something__trashed/</link>
+		<link>http://localhost/2019/04/23/temp-something__trashed/</link>
 		<pubDate>Tue, 23 Apr 2019 23:22:50 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=54</guid>
+		<guid isPermaLink="false">http://localhost/?p=54</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -951,10 +951,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title>Post 2: category A</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/23/temp-2__trashed/</link>
+		<link>http://localhost/2019/04/23/temp-2__trashed/</link>
 		<pubDate>Tue, 23 Apr 2019 23:25:32 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=57</guid>
+		<guid isPermaLink="false">http://localhost/?p=57</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>aljnsdfansdf </p>
@@ -1000,10 +1000,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title>Post: Category A</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/24/temp-b__trashed/</link>
+		<link>http://localhost/2019/04/24/temp-b__trashed/</link>
 		<pubDate>Wed, 24 Apr 2019 02:22:57 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=62</guid>
+		<guid isPermaLink="false">http://localhost/?p=62</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:html -->
 Hello World
@@ -1049,10 +1049,10 @@ Hello World
 	</item>
 	<item>
 		<title>Post AB</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/25/post-ab__trashed/</link>
+		<link>http://localhost/2019/04/25/post-ab__trashed/</link>
 		<pubDate>Thu, 25 Apr 2019 21:34:30 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=215</guid>
+		<guid isPermaLink="false">http://localhost/?p=215</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1096,10 +1096,10 @@ Hello World
 	</item>
 	<item>
 		<title>POST ABB</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/25/post-abb__trashed/</link>
+		<link>http://localhost/2019/04/25/post-abb__trashed/</link>
 		<pubDate>Thu, 25 Apr 2019 21:42:52 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=217</guid>
+		<guid isPermaLink="false">http://localhost/?p=217</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1143,10 +1143,10 @@ Hello World
 	</item>
 	<item>
 		<title>Fellowships</title>
-		<link>http://localhost/Innovation-Wordpress/2019/04/29/fellowships__trashed/</link>
+		<link>http://localhost/2019/04/29/fellowships__trashed/</link>
 		<pubDate>Mon, 29 Apr 2019 07:33:38 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=283</guid>
+		<guid isPermaLink="false">http://localhost/?p=283</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1194,7 +1194,7 @@ Hello World
 		<link>http://jacobsschool.ucsd.edu/research-expo/</link>
 		<pubDate>Mon, 29 Apr 2019 09:10:42 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=321</guid>
+		<guid isPermaLink="false">http://localhost/?p=321</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1238,7 +1238,7 @@ Hello World
 		<link>https://aip.ucsd.edu/</link>
 		<pubDate>Mon, 29 Apr 2019 09:13:12 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=323</guid>
+		<guid isPermaLink="false">http://localhost/?p=323</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1282,7 +1282,7 @@ Hello World
 		<link>https://library.ucsd.edu/computing-and-technology/digital-media-lab/index.html</link>
 		<pubDate>Mon, 29 Apr 2019 09:14:35 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=325</guid>
+		<guid isPermaLink="false">http://localhost/?p=325</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1322,7 +1322,7 @@ Hello World
 		<link>http://www.ucsdbasement.com/program-tracks-1/</link>
 		<pubDate>Mon, 29 Apr 2019 09:15:53 +0000</pubDate>
 		<dc:creator><![CDATA[danhuang]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/Innovation-Wordpress/?p=327</guid>
+		<guid isPermaLink="false">http://localhost/?p=327</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>

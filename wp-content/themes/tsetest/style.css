@@ -504,6 +504,11 @@ h1 {
   font-size: 2.25em;
 }
 
+@media screen and (max-width: 768px) {
+  ul.ip-cat-boxes li {
+    width: 100vw !important;
+  } 
+}
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 2.8125em;
@@ -980,7 +985,7 @@ ul.ip-cat-boxes {
 
 ul.ip-cat-boxes li {
   width: 26.77vw;
-}
+} 
 
 li.ip-cat {
 	display: inline-block;
@@ -1368,3 +1373,5 @@ div.entry-content p {
     width: 75%;
     position: absolute;
 }
+
+
