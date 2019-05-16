@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
+<script>apiTest();</script>
   <div class="ip-userselect">
   <h4 class="ident-user">Who are you?</h4>
   <h3 class="ident-user" id="user-type-display"></h3>
@@ -21,23 +22,23 @@
     <div class="col col-centered">
       <a href="#prompt2" style="text-decoration: none; color:black;">
         <div class="cards" id="student-card" onclick="ipUpdateUserType(&quot;Students&quot;, &quot;student-card&quot;)">
-          <img id="ip-student-type" src="http://localhost/wp-content/themes/tsetest/img/student.png">
-          <p>Students</p>
+          <img id="ip-student-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/student.png">
+          <p>Undergrad. & Grad. Students</p>
         </div>
-      </a> 
+      </a>
     </div>
     <div class="col col-centered">
       <a href="#prompt2" style="text-decoration: none; color:black;">
         <div class="cards" id="faculty-card" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;faculty-card&quot;)">
-          <img id="ip-faculty-type" src="http://localhost/wp-content/themes/tsetest/img/faculty.png">
-          <p>Faculty & Staff</p>
+          <img id="ip-faculty-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/faculty.png">
+          <p>Faculty, Research Sci. & Staff</p>
         </div>
       </a>
     </div>
     <div class="col col-centered">
       <a href="#prompt2" style="text-decoration: none; color:black;">
         <div class="cards" id="alumni-card" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;alumni-card&quot;)">
-          <img id="ip-alumni-type" src="http://localhost/wp-content/themes/tsetest/img/alumni.png">
+          <img id="ip-alumni-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/alumni.png">
           <p>Alumni & Community</p>
         </div>
       </a>
@@ -47,29 +48,29 @@
   <div id="prompt2" style="padding-bottom:3rem;"></div>
   <h4 class="ident-user ident-topic ip-hidden" id="prompt2">What are you looking for?</h4>
   <ul class="ip-cat-boxes ip-hidden" id="student_boxes">
-    <li class="ip-cat"><input id="ip-accelerator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;accelerator&quot;)">Accelerator/Incubator</li>
-    <li class="ip-cat"><input id="ip-education-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;education&quot;)">Education & Hands-on Learning</li>
-    <li class="ip-cat"><input id="ip-fund-comp-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;fund-comp&quot;)">Funding & Competitions</li>
-    <li class="ip-cat"><input id="ip-maker-collab-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;maker-collab&quot;)">Maker & Collaborative Spaces</li>
-    <li class="ip-cat"><input id="ip-mentor-advisor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;mentor-advisor&quot;)">Mentors & Advisors</li>
-    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
-    <li class="ip-cat"><input id="ip-project-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;project&quot;)">Projects & Career</li>
+    <li class="ip-cat"><input id="ip-accelerator-incubator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(12)">Accelerator/Incubator</li>
+    <li class="ip-cat"><input id="ip-education-and-handson-learning-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(11)">Education & Hands-on Learning</li>
+    <li class="ip-cat"><input id="ip-funding-and-competitions-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(13)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-maker-and-collaborative-spaces-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(14)">Maker & Collaborative Spaces</li>
+    <li class="ip-cat"><input id="ip-mentors-and-advisors-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(15)">Mentors & Advisors</li>
+    <li class="ip-cat"><input id="ip-networking-and-events-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(16)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-projects-and-career-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(17)">Projects & Career</li>
   </ul>
   <ul class="ip-cat-boxes ip-hidden" id="faculty_boxes">
-    <li class="ip-cat"><input id="ip-accelerator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;accelerator&quot;)">Accelerator/Incubator</li>
-    <li class="ip-cat"><input id="ip-prof-dev-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;prof-dev&quot;)">Professional Development</li>
-    <li class="ip-cat"><input id="ip-fund-comp-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;fund-comp&quot;)">Funding & Competitions</li>
-    <li class="ip-cat"><input id="ip-consulting-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;consulting&quot;)">Consulting/Advising for Your Projects</li>
-    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
-    <li class="ip-cat"><input id="ip-technology-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;technology&quot;)">Technology Commercialization</li>
+    <li class="ip-cat"><input id="ip-accelerator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(1)">Accelerator/Incubator</li>
+    <li class="ip-cat"><input id="ip-prof-dev-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(7)">Professional Development</li>
+    <li class="ip-cat"><input id="ip-fund-comp-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-consulting-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Consulting/Advising for Your Projects</li>
+    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(6)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-technology-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Technology Commercialization</li>
   </ul>
   <ul class="ip-cat-boxes ip-hidden" id="alumni_boxes">
-    <li class="ip-cat"><input id="ip-investor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;investor&quot;)">Investor Opportunities</li>
-    <li class="ip-cat"><input id="ip-mentor-volunteer-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;mentor-volunteer&quot;)">Mentor and Volunteer</li>
-    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;networking&quot;)">Networking & Events</li>
-    <li class="ip-cat"><input id="ip-recruit-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;recruit&quot;)">Recruit for Your Company</li>
-    <li class="ip-cat"><input id="ip-business-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;business&quot;)">Start a Business</li>
-    <li class="ip-cat"><input id="ip-competition-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(&quot;competition&quot;)">Showcases & Competitions</li>
+    <li class="ip-cat"><input id="ip-investor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Investor Opportunities</li>
+    <li class="ip-cat"><input id="ip-mentor-volunteer-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Mentor and Volunteer</li>
+    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(6)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-recruit-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Recruit for Your Company</li>
+    <li class="ip-cat"><input id="ip-business-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Start a Business</li>
+    <li class="ip-cat"><input id="ip-competition-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Showcases & Competitions</li>
   </ul>
 </form></div>
 
@@ -79,39 +80,7 @@
   </div>
 <div id="AllTopics" class="tabcontent">
   <div id="ip-allresources-div" class="ip-resource-tiles ">
-    [display-posts category="Students,Faculty & Staff,Alumni & Community" image_size="large"]
-  </div>
-  <div id="ip-students-div" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Students" image_size="large"]
-  </div>
-  <div id="ip-faculty-div" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Faculty & Staff" image_size="large"]
-  </div>
-  <div id="ip-alumni-div" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Alumni & Community" image_size="large"]
-  </div>
 
-
-  <div id="ip-stud-accelerator" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Accelerator Incubator" image_size="large"]
-  </div>
-  <div id="ip-stud-education" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Education and Handson Learning" image_size="large"]
-  </div>
-  <div id="ip-stud-fund-comp" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Funding and Competitions" image_size="large"]
-  </div>
-  <div id="ip-stud-maker-collab" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Maker and Collaborative Spaces" image_size="large"]
-  </div>
-  <div id="ip-stud-mentor-advisor" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Mentors and Advisors" image_size="large"]
-  </div>
-  <div id="ip-stud-networking" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Networking and Events" image_size="large"]
-  </div>
-  <div id="ip-stud-project" class="ip-resource-tiles ip-hidden">
-  [display-posts category="Projects and Career" image_size="large"]
   </div>
 
 </div>
