@@ -1,0 +1,102 @@
+<head>
+    <link rel="icon" href="">
+    <title> Innovation Portal - UC San Diego </title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- My CSS & JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<script>apiTest();</script>
+  <div class="ip-userselect">
+  <h4 class="ident-user">Who are you?</h4>
+  <h3 class="ident-user" id="user-type-display"></h3>
+  <form>
+
+  <div class="row">
+    <div class="col col-centered">
+      <a href="#prompt2" style="text-decoration: none; color:black;">
+        <div class="cards" id="student-card" onclick="ipUpdateUserType(&quot;Students&quot;, &quot;student-card&quot;)">
+          <img id="ip-student-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/student.png">
+          <p>Undergrad. & Grad. Students</p>
+        </div>
+      </a>
+    </div>
+    <div class="col col-centered">
+      <a href="#prompt2" style="text-decoration: none; color:black;">
+        <div class="cards" id="faculty-card" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;faculty-card&quot;)">
+          <img id="ip-faculty-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/faculty.png">
+          <p>Faculty, Research Sci. & Staff</p>
+        </div>
+      </a>
+    </div>
+    <div class="col col-centered">
+      <a href="#prompt2" style="text-decoration: none; color:black;">
+        <div class="cards" id="alumni-card" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;alumni-card&quot;)">
+          <img id="ip-alumni-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/alumni.png">
+          <p>Alumni & Community</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="prompt2" style="padding-bottom:3rem;"></div>
+  <h4 class="ident-user ident-topic ip-hidden" id="prompt2">What are you looking for?</h4>
+  <ul class="ip-cat-boxes ip-hidden" id="student_boxes">
+    <li class="ip-cat"><input id="ip-accelerator-incubator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(12)">Accelerator/Incubator</li>
+    <li class="ip-cat"><input id="ip-education-and-handson-learning-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(11)">Education & Hands-on Learning</li>
+    <li class="ip-cat"><input id="ip-funding-and-competitions-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(13)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-maker-and-collaborative-spaces-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(14)">Maker & Collaborative Spaces</li>
+    <li class="ip-cat"><input id="ip-mentors-and-advisors-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(15)">Mentors & Advisors</li>
+    <li class="ip-cat"><input id="ip-networking-and-events-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(16)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-projects-and-career-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(17)">Projects & Career</li>
+  </ul>
+  <ul class="ip-cat-boxes ip-hidden" id="faculty_boxes">
+    <li class="ip-cat"><input id="ip-accelerator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(1)">Accelerator/Incubator</li>
+    <li class="ip-cat"><input id="ip-prof-dev-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(7)">Professional Development</li>
+    <li class="ip-cat"><input id="ip-fund-comp-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-consulting-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Consulting/Advising for Your Projects</li>
+    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(6)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-technology-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Technology Commercialization</li>
+  </ul>
+  <ul class="ip-cat-boxes ip-hidden" id="alumni_boxes">
+    <li class="ip-cat"><input id="ip-investor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Investor Opportunities</li>
+    <li class="ip-cat"><input id="ip-mentor-volunteer-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Mentor and Volunteer</li>
+    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(6)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-recruit-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Recruit for Your Company</li>
+    <li class="ip-cat"><input id="ip-business-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Start a Business</li>
+    <li class="ip-cat"><input id="ip-competition-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Showcases & Competitions</li>
+  </ul>
+</form></div>
+
+<div class="topics">
+  <div class="tabs">
+    <a href="#topics">All Topics</a>
+  </div>
+<div id="AllTopics" class="tabcontent">
+  <div id="ip-allresources-div" class="ip-resource-tiles ">
+
+  </div>
+
+</div>
+  <div class="ip-gifts ip-identify">
+    <h3>Support UC San Diego's Innovation Initiative!</h3>
+    <p>By supporting the Office of Innovation, you are a part of the Campaign for UC San Diego. Help us make waves — here and across the globe.</p>
+    <button type="button" class="gifts">Give to UC San Diego!
+    </button>
+  </div>
+
+  <div class="ip-message">
+    <h4>Didn't find the resource you were looking for? Let us know how we can help you!</h4>
+    <form>
+      <input type="text" name="name" placeholder="NAME"><input type="email" name="email" placeholder="EMAIL">
+      <textarea name="message" placeholder="MESSAGE" cols="35"></textarea>
+      <input type="submit" value="SEND MESSAGE">
+    </form>
+  </div>
+</body>
