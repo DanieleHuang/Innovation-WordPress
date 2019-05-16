@@ -1,4 +1,11 @@
-# Innovation-WordPress
+# Innovation-Portal
+
+## Required Plugins:
+ Better REST API Featured Images - To pull from the posts database <br>
+ WordPress Importer - imports posts
+## Optional Plugins:
+ Export media with selected content - as the name says <br>
+ Page Links To - The resources can link to an external URL <br>
 ## setup
 1) Clone the repo
 2) Download a local server from here: https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/
