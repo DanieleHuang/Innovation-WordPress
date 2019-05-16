@@ -5,20 +5,27 @@ let toggled_box = 0;
 let selected_user = null;
 let allCat = {
 	0: "uncat",
-	12: "accelerator-incubator",
-	11: "education-and-handson-learning",
-  13: "funding-and-competitions",
-	14: "maker-and-collaborative-spaces",
-	15: "mentors-and-advisors",
-	16: "networking-and-events",
-	1: "professional-development",
-	17: "projects-and-career",
+	4: "accelerator-incubator",
+	6: "education-and-handson-learning",
+  	7: "funding-and-competitions",
+	8: "maker-and-collaborative-spaces",
+	9: "mentors-and-advisors",
+	11: "networking-and-events",
+	12: "professional-development",
+	10: "projects-and-career",
+	13: "consulting-advising",
+	14: "tech-commercialization",
+	15: "investor-opportunities",
+	16: "mentor-and-volunteer",
+	17: "recruit-for-your-company",
+	18: "start-a-business",
+	19: "showcases-competitions",
 	10: "students"
 
 }
-let allCatList =[12,11,13,14,15,16,17,1,19];
+let allCatList =[0, 4, 6, 12, 7, 13, 11, 14, 15, 16, 17, 18, 19, 9, 10];
 //
-let studentCat = [12,11,13,14,15,16,17,19];
+let studentCat = [0, 4, 6, 12, 7, 13, 11, 14, 15, 16, 17, 18, 19, 9, 10];
 let facultyCat = [];
 let alumniCat = [];
 let personaDict = {
@@ -162,52 +169,59 @@ function ipToggleCategory(category) {
 }
 
 function apiTest(){
-	//if (ipAllCatsHidden()){
+    //if (ipAllCatsHidden()){
 
-		//cleanup everytime it's called
-		let resources = document.getElementsByClassName("resource_tile");
-		let tot = resources.length;
-		for(i=0;i<tot;i++){
-			resources[0].remove()
-		}
+        //cleanup everytime it’s called
+        let resources = document.getElementsByClassName('resource_tile');
+        let tot = resources.length;
+        for(i=0;i<tot;i++){
+            resources[0].remove()
+        }
 
-	//}
-	let categories = displayedCategories[0];
-	for (i = 1; i< displayedCategories.length; i++)
-		categories = categories + "," + displayedCategories[i];
-  console.log(`displayedCat ${displayedCategories.length}: ${categories}`);
-		let request = new XMLHttpRequest();
-		request.onreadystatechange = function() {
-			console.log(request.statusText);
-	    	if (this.readyState == 4 && this.status == 200) {
-	       		// Typical action to be performed when the document is ready:
-	       		console.log(categories);
-				let posts = JSON.parse(request.responseText);
-				console.log(posts);
+    //}
+    let categories = displayedCategories[0];
 
-				let div = document.getElementById("ip-allresources-div");
+    for (i = 1; i< displayedCategories.length; i++) {
+        categories = categories + ',' + displayedCategories[i];
+ 		console.log(`displayedCat ${displayedCategories.length}: ${categories}`);
+        let request = new XMLHttpRequest();
 
-				for(i=0; i<posts.length; i++){
-					let tile = document.createElement("div");
-					let tile_img = document.createElement("img");
-					//doesn't work for some reason
-					//tile_img.src = posts[i]._links['wp:featuredmedia']["0"]["href"];
-					tile_img.src = posts[i].better_featured_image.source_url;
-					console.log(posts[i]._links['wp:featuredmedia']["0"]["href"]);
-					let p = document.createTextNode(posts[i].title.rendered);
-					tile.appendChild(tile_img);
-					tile.appendChild(p);
-					tile.classList+="resource_tile";
-					div.appendChild(tile);
-				}
-				
-			}else{
-				console.log("Bad request!")
-			}
-		};
-		//TODO change this
-		let content =  "/Innovation-WordPress/wp-json/wp/v2/posts?categories=" + categories + "&per_page=50&_embed";
-		console.log(`Content: ${content}`);
-		request.open("GET",content);
-		request.send();
-	}
+        request.onreadystatechange = function() {
+            console.log(request.statusText);
+            if (this.readyState == 4 && this.status == 200) {
+				// Typical action to be performed when the document is ready:
+				console.log(categories);
+                let posts = JSON.parse(request.responseText);
+                console.log(posts);
+
+                let div = document.getElementById('ip-allresources-div');
+
+                for(i=0; i<posts.length; i++){
+                    let a = document.createElement('a');
+                    let p = document.createElement('p');
+                    let d = document.createElement('div');
+                    let tile_img = document.createElement('img');
+
+                    //doesn’t work for some reason
+                    //tile_img.src = posts[i]._links[‘wp:featuredmedia’][“0”][“href”];
+                    tile_img.src = posts[i].better_featured_image.source_url;
+                    p.innerHTML = posts[i].title.rendered;
+                    a.appendChild(tile_img);
+                    a.appendChild(d);
+                    d.appendChild(p);
+                    a.classList+='resource_tile';
+                    a.classList+=' resource';
+                    tile_img.classList+="resource-img";
+                    d.classList+='overlay';
+                    a.href= posts[i].link;
+                    div.appendChild(a);
+                }
+
+            }
+        };
+        //TODO change this
+        let content =  '/wp-json/wp/v2/posts?categories=' + categories + '&per_page=50&_embed';
+        request.open('GET',content);
+        request.send();
+    }
+}
