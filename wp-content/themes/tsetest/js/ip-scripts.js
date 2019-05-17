@@ -4,30 +4,45 @@ console.log("JS file has been loaded!");
 let toggled_box = 0;
 let selected_user = null;
 let allCat = {
-	0: "uncat",
-	4: "accelerator-incubator",
-	6: "education-and-handson-learning",
-  	7: "funding-and-competitions",
-	8: "maker-and-collaborative-spaces",
-	9: "mentors-and-advisors",
-	11: "networking-and-events",
-	12: "professional-development",
-	10: "projects-and-career",
-	13: "consulting-advising",
-	14: "tech-commercialization",
-	15: "investor-opportunities",
-	16: "mentor-and-volunteer",
-	17: "recruit-for-your-company",
-	18: "start-a-business",
-	19: "showcases-competitions",
-	10: "students"
+	10: "students",
+	11: "education-and-handson-learning-st",
+	12: "accelerator-st",
+  13: "funding-and-competitions",
+	14: "maker-and-collaborative-spaces",
+	15: "mentors-and-advisors",
+	16: "networking-and-events-st",
+	17: "projects-and-career",
+
+
+	//faculty
+	20: "faculty",
+	21: "funding-and-competitions-fc",
+	23: "consulting",
+	24: "technology",
+	26: "clinical-trial-resources-fc",
+	35: "networking-and-events-fc",
+	36: "education-and-handson-learning-fc",
+	37: "accelerator-fc",
+	//alumni
+	27: "alumni",
+	28: "start-business",
+	30: "mentor-volunteer",
+	31: "showcases-competition",
+	32: "recruit",
+	33: "investor",
+	34: "networking-and-events-al"
+	//15: "investor-opportunities",
+	//16: "mentor-and-volunteer",
+	//17: "recruit-for-your-company",
+	//18: "start-a-business",
+	//19: "showcases-competitions",
 
 }
-let allCatList =[0, 4, 6, 12, 7, 13, 11, 14, 15, 16, 17, 18, 19, 9, 10];
+let allCatList =[10,11,12,13,14,15,16,17,20,21,23,24,26,36,37,27,28,30,31,32,33,34];
 //
-let studentCat = [0, 4, 6, 12, 7, 13, 11, 14, 15, 16, 17, 18, 19, 9, 10];
-let facultyCat = [];
-let alumniCat = [];
+let studentCat = [11,12,13,14,15,16,17]
+let facultyCat = [21,23,24,26,36,37];
+let alumniCat = [28,30,31,32,33,34];
 let personaDict = {
 	0: studentCat,
 	1: facultyCat,
@@ -65,8 +80,7 @@ function ipResetUserType() {
 		boxes[i].checked = false;
 	}
 
-	//display all resources
-	displayedCategories = allCatList;
+
 }
 
 //called when a persona card is clicked, calls ipResetUserType to uncheck
@@ -101,34 +115,96 @@ function ipUpdateUserType(type, currentId) {
 
 	selected_user = typeDiv;
   displayedCategories = personaDict[currentPersona];
+	toggled_box = 0;
   console.log(displayedCategories);
 	apiTest();
 	//ipShowAllCategories();
 }
 
 
-//might not be needed
-function ipHideAllCategories() {
-	displayedCategories = [];
-}
 
-function ipShowAllCategories(){
-	console.log(`current persona ${currentPersona}`);
-	displayedCategories = personaDict[currentPersona];
-}
 
-//need further investigation
-function ipAllCatsShown() {
-	let cats = document.getElementsByClassName("ip-resource-cat");
-	let i;
-	for (i = 0; i < cats.length; i++) {
-		if (cats[i].classList.contains("ip-hidden") == true) {
-			return false;
+//handles check boxes toggling
+function ipToggleCategory(category) {
+
+	let add = 0;
+	if ( ! document.getElementById("ip-" + allCat[category] + "-box").checked) {
+    add=0;
+		toggled_box -=1;
+
+	} else {
+		add=1
+		toggled_box+=1;
+		displayedCategories.push(category);
+
+	}
+	console.log(`Adding? ${add}`)
+  ipShowResources(category, add);
+
+
+}
+//display all resources under one persona
+function ipShowResources(category, add){
+	//console.log(`box: ${toggled_box}`);
+	//if all boxes unchecked
+	if(!add){
+		if (toggled_box == 0){
+			//console.log(`current persona ${currentPersona}`);
+			let resources = document.getElementsByClassName('resource_tile');
+			for(i=0; i< resources.length; i++){
+				resources[i].classList.remove("ip-hidden");
+			}
+
+			displayedCategories = personaDict[currentPersona];
+			//console.log(`length ${displayedCategories.length} `);
+		}
+		//if more are showing
+		else{
+			//remove from list and hide
+
+			displayedCategories = displayedCategories.filter(cat=> cat!=category);
+      let hideResource = document.getElementsByClassName('cat-'+category);
+			//console.log(`categories shown: ${displayedCategories.length}`)
+			for(i=0; i<hideResource.length;i++)
+					hideResource[i].classList.add("ip-hidden");
+
+
 		}
 	}
-	return true;
+	//if we checked a box
+	else{
+		//special case when only one category is selected
+		if( toggled_box==1){
+			//hide all
+			ipHideAllCategories();
+			//display only one
+			displayedCategories = [category];
+		}
+
+
+
+	//	console.log(`categories shown: ${displayedCategories.length}`)
+		for(i=0; i<displayedCategories.length;i++){
+			let resources = document.getElementsByClassName('cat-'+displayedCategories[i]);
+	//		console.log(`cat: ${displayedCategories[i]} has: ${resources.length}`);
+			for( j =0;j< resources.length; j++){
+				resources[j].classList.remove("ip-hidden");
+			}
+		}
+	}
+
+
+
 }
 
+//hide everything
+function ipHideAllCategories() {
+	displayedCategories = [];
+	let resources = document.getElementsByClassName('resource_tile');
+	for(i=0; i< resources.length; i++){
+		resources[i].classList.add("ip-hidden");
+	}
+}
 // check if any cats are hidden, maybe check if any box has been checked
 function ipAllCatsHidden() {
 	if (displayedCategories == null)
@@ -136,37 +212,7 @@ function ipAllCatsHidden() {
 	return displayedCategories.length ==0 ;
 }
 
-function ipToggleCategory(category) {
-	/*if (document.getElementById("ip-resource-div").classList.contains("ip-all-shown")) {
-		ipHideAllCategories();
-	}*/
- console.log(category);
 
-	if ( ! document.getElementById("ip-" + allCat[category] + "-box").checked) {
-		displayedCategories = displayedCategories.filter(function remCat(cat) {
-			//remove from list
-			return cat != category;
-		});
-		toggled_box -=1;
-	} else {
-		toggled_box+=1;
-	}
-
-	if (toggled_box == 0){
-		ipShowAllCategories();
-		console.log(`length ${displayedCategories.length} `);
-	}
-	else if ( toggled_box == 1){
-		displayedCategories = [category];
-	}
-	else{
-		displayedCategories.push(category);
-
-	}
-
-	apiTest();
-
-}
 
 function apiTest(){
     //if (ipAllCatsHidden()){
@@ -181,9 +227,9 @@ function apiTest(){
     //}
     let categories = displayedCategories[0];
 
-    for (i = 1; i< displayedCategories.length; i++) {
+    for (i = 1; i< displayedCategories.length; i++)
         categories = categories + ',' + displayedCategories[i];
- 		console.log(`displayedCat ${displayedCategories.length}: ${categories}`);
+ 		//console.log(`displayedCat ${displayedCategories.length}: ${categories}`);
         let request = new XMLHttpRequest();
 
         request.onreadystatechange = function() {
@@ -192,7 +238,7 @@ function apiTest(){
 				// Typical action to be performed when the document is ready:
 				console.log(categories);
                 let posts = JSON.parse(request.responseText);
-                console.log(posts);
+                //console.log(posts);
 
                 let div = document.getElementById('ip-allresources-div');
 
@@ -201,7 +247,10 @@ function apiTest(){
                     let p = document.createElement('p');
                     let d = document.createElement('div');
                     let tile_img = document.createElement('img');
-
+										//add category class id to each tile
+										for(j =0; j<posts[i].categories.length; j++){
+											a.classList.add('cat-'+posts[i].categories[j]);
+										}
                     //doesn’t work for some reason
                     //tile_img.src = posts[i]._links[‘wp:featuredmedia’][“0”][“href”];
                     tile_img.src = posts[i].better_featured_image.source_url;
@@ -209,10 +258,10 @@ function apiTest(){
                     a.appendChild(tile_img);
                     a.appendChild(d);
                     d.appendChild(p);
-                    a.classList+='resource_tile';
-                    a.classList+=' resource';
-                    tile_img.classList+="resource-img";
-                    d.classList+='overlay';
+                    a.classList.add('resource_tile');
+                    a.classList.add('resource');
+                    tile_img.classList.add("resource-img");
+                    d.classList.add('overlay');
                     a.href= posts[i].link;
                     div.appendChild(a);
                 }
@@ -220,8 +269,8 @@ function apiTest(){
             }
         };
         //TODO change this
-        let content =  '/wp-json/wp/v2/posts?categories=' + categories + '&per_page=50&_embed';
+        let content =  '/Innovation-WordPress/wp-json/wp/v2/posts?categories=' + categories + '&per_page=100&_embed';
         request.open('GET',content);
         request.send();
-    }
+
 }

@@ -22,7 +22,7 @@
     <div class="col col-centered">
       <a href="#prompt2" style="text-decoration: none; color:black;">
         <div class="cards" id="student-card" onclick="ipUpdateUserType(&quot;Students&quot;, &quot;student-card&quot;)">
-          <img id="ip-student-type" src="http://localhost/wp-content/themes/tsetest/img/student.png">
+          <img id="ip-student-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/student.png">
           <p>Undergraduates & Graduates</p>
         </div>
       </a>
@@ -30,7 +30,7 @@
     <div class="col col-centered">
       <a href="#prompt2" style="text-decoration: none; color:black;">
         <div class="cards" id="faculty-card" onclick="ipUpdateUserType(&quot;Faculty & Staff&quot;, &quot;faculty-card&quot;)">
-          <img id="ip-faculty-type" src="http://localhost/wp-content/themes/tsetest/img/faculty.png">
+          <img id="ip-faculty-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/faculty.png">
           <p>Faculty, Research Sci. & Staff</p>
         </div>
       </a>
@@ -38,7 +38,7 @@
     <div class="col col-centered">
       <a href="#prompt2" style="text-decoration: none; color:black;">
         <div class="cards" id="alumni-card" onclick="ipUpdateUserType(&quot;Alumni & Community&quot;, &quot;alumni-card&quot;)">
-          <img id="ip-alumni-type" src="http://localhost/wp-content/themes/tsetest/img/alumni.png">
+          <img id="ip-alumni-type" src="http://localhost/Innovation-WordPress/wp-content/themes/tsetest/img/alumni.png">
           <p>Alumni & Community</p>
         </div>
       </a>
@@ -48,29 +48,35 @@
   <div id="prompt2" style="padding-bottom:3rem;"></div>
   <h4 class="ident-user ident-topic ip-hidden" id="prompt2">What are you looking for?</h4>
   <ul class="ip-cat-boxes ip-hidden" id="student_boxes">
-    <li class="ip-cat"><input id="ip-accelerator-incubator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(4)">Accelerator/Incubator</li>
-    <li class="ip-cat"><input id="ip-education-and-handson-learning-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(6)">Education & Hands-on Learning</li>
-    <li class="ip-cat"><input id="ip-funding-and-competitions-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(7)">Funding & Competitions</li>
-    <li class="ip-cat"><input id="ip-maker-and-collaborative-spaces-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(8)">Maker & Collaborative Spaces</li>
-    <li class="ip-cat"><input id="ip-mentors-and-advisors-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(9)">Mentors & Advisors</li>
-    <li class="ip-cat"><input id="ip-networking-and-events-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(11)">Networking & Events</li>
-    <li class="ip-cat"><input id="ip-projects-and-career-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(10)">Projects & Career</li>
+    <li class="ip-cat"><input id="ip-accelerator-st-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(12)">Accelerator/Incubator</li>
+    <li class="ip-cat"><input id="ip-education-and-handson-learning-st-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(11)">Education & Hands-on Learning</li>
+    <li class="ip-cat"><input id="ip-funding-and-competitions-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(13)">Funding & Competitions</li>
+    <li class="ip-cat"><input id="ip-maker-and-collaborative-spaces-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(14)">Maker & Collaborative Spaces</li>
+    <li class="ip-cat"><input id="ip-mentors-and-advisors-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(15)">Mentors & Advisors</li>
+    <li class="ip-cat"><input id="ip-networking-and-events-st-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(16)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-projects-and-career-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(17)">Projects & Career</li>
   </ul>
   <ul class="ip-cat-boxes ip-hidden" id="faculty_boxes">
-    <li class="ip-cat"><input id="ip-accelerator-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(4)">Accelerator/Incubator</li>
-    <li class="ip-cat"><input id="ip-prof-dev-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(12)">Professional Development</li>
-    <li class="ip-cat"><input id="ip-fund-comp-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(7)">Funding & Competitions</li>
-    <li class="ip-cat"><input id="ip-consulting-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(13)">Consulting/Advising for Your Projects</li>
-    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(11)">Networking & Events</li>
-    <li class="ip-cat"><input id="ip-technology-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(14)">Technology Commercialization</li>
+    <li class="ip-cat"><input id="ip-accelerator-fc-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(37)">Accelerator/Incubator</li>
+    <li class="ip-cat"><input id="ip-education-and-handson-learning-fc-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(36)">Education & Hands-on Learning</li>
+    <li class="ip-cat"><input id="ip-funding-and-competitions-fc-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(21)">Campus Technology Development Funds</li>
+    <li class="ip-cat"><input id="ip-consulting-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(23)">Consulting/Advising for Your Projects</li>
+    <li class="ip-cat"><input id="ip-networking-and-events-fc-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(35)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-technology-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(24)">Technology Commercialization</li>
+    <li class="ip-cat"><input id="ip-clinical-trial-resources-fc-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(26)">Clinical Trial Resources</li>
+
   </ul>
   <ul class="ip-cat-boxes ip-hidden" id="alumni_boxes">
-    <li class="ip-cat"><input id="ip-investor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(15)">Investor Opportunities</li>
-    <li class="ip-cat"><input id="ip-mentor-volunteer-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(16)">Mentor and Volunteer</li>
-    <li class="ip-cat"><input id="ip-networking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(11)">Networking & Events</li>
-    <li class="ip-cat"><input id="ip-recruit-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(17)">Recruit for Your Company</li>
-    <li class="ip-cat"><input id="ip-business-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(18)">Start a Business</li>
-    <li class="ip-cat"><input id="ip-competition-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(19)">Showcases & Competitions</li>
+    <li class="ip-cat"><input id="ip-investor-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(33)">Invest in a UCSD Company</li>
+    <li class="ip-cat"><input id="ip-mentor-volunteer-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(30)">Mentor and Volunteer</li>
+    <li class="ip-cat"><input id="ip-networking-and-events-al-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(34)">Networking & Events</li>
+    <li class="ip-cat"><input id="ip-recruit-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(32)">Recruit for Your Organization</li>
+    <li class="ip-cat"><input id="ip-start-business-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(28)">Resources to Start your Business</li>
+    <li class="ip-cat"><input id="ip-showcases-competition-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(31)">Showcases & Competitions</li>
+    <li class="ip-cat"><input id="ip-clinical-trial-resources-al-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Clinical Trial Resources</li>
+    <li class="ip-cat"><input id="ip-lecture-speaking-box"  class="ip-cat-box" type="checkbox" onclick="ipToggleCategory(0)">Lecture & Speaking Engagement</li>
+
+
   </ul>
 </form></div>
 
